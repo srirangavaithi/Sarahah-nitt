@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sarahah @ NITT</title>
+  <style type="text/css">
+      
+       input{
+        border:1px solid lightblue;
+        padding: 4px; 
+        border-radius: 40px;
+
+       }
+      h2{
+        color: white;
+        font-family: Blackadder ITC;
+        
+      }
+    h1{ 
+        color:powderblue;
+            font-family:Brush Script MT;
+            font-style: italic;
+            font-size: 300%;
+            border: 1px solid lightblue;
+
+      }
+    body
+      {
+            color: #33cccc;
+            font-family:  Blackadder ITC;
+      }
+        div.a
+        {text-align: center;}
+        div.b
+        {margin: 50px;}
+
+        .button {
+  border-radius: 4px;
+  background-color:#66CCCC;
+  border: none;
+  color: #FFFFFF;
+  text-align: top;
+  font-size: 14px;
+  padding: 20px;
+ 
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 12px;
+  right : -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+          p.a{
+            color:#66CCCC; 
+            font-style:italic;
+          }      
+          p.b{
+            color:black; 
+            font-style:italic;
+          } 
+          p.c{
+            border: 10px solid lightblue;
+            padding: 5px;
+          }  
+  </style>
+</head>
+
+<body bgcolor="#344152">
+  <h1>Login<h1>
+  <hr>
+  <form method="post" action="addregn.php">
+    Username:<input type="text" name="uname" placeholder="Username"><br>
+    Password:<input type="password" name="pword" placeholder="Password"><br>
+   Confirmed password:<input type="password" name="pword2" placeholder="Confirmed password"><br>
+    <button class="button"><span>Submit</span></button>
+  </form>
+
+</body>
+</html>
